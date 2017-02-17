@@ -1,0 +1,83 @@
+/*
+* @Author: Lee
+* @Date:   2017-02-17 20:34:16
+* @Last Modified by:   Lee
+* @Last Modified time: 2017-02-17 21:49:01
+*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+#container {
+    width: 210px;
+    height: 140px;
+    perspective: 1000px;   /*关键点1*/
+    /*position: absolute; left: 0; top: 0; right: 0; bottom: 0;*/
+    margin: auto; 
+}
+
+#imgContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d; /*关键点2*/
+    transition: .5s;
+    transform: rotateY(0deg)  translateY( 288px );
+}
+
+.picture {
+    display: block;
+    position: absolute;
+    width: 210px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    transition: .5s;
+}
+
+.picture:nth-child(1) {
+    transform: rotateY(0deg)  translateZ( 288px );
+}
+.picture:nth-child(2) {
+    transform: rotateY(40deg)  translateZ( 288px );
+}
+
+.picture:nth-child(3) {
+    transform: rotateY(80deg)  translateZ( 288px );
+}
+
+.picture:nth-child(4) {
+    transform: rotateY(120deg)  translateZ( 288px );
+}
+
+.picture:nth-child(5) {
+    transform: rotateY(160deg)  translateZ( 288px );
+}
+
+.picture:nth-child(6) {
+    transform: rotateY(200deg)  translateZ( 288px );
+}
+
+.picture:nth-child(7) {
+    transform: rotateY(240deg)  translateZ( 288px );
+}
+
+.picture:nth-child(8) {
+    transform: rotateY(280deg)  translateZ( 288px );
+}
+
+.picture:nth-child(9) {
+    transform: rotateY(320deg)  translateZ( 288px );
+}
+.controlContainer{
+	width: 210px;
+	margin: 50px auto 0 auto;
+}
+.control{
+	width: 100px;
+	height: 30px;
+	border: none;
+	background-color: #b3b3b3;
+	border-radius: 5px;
+	color: white;
+}
